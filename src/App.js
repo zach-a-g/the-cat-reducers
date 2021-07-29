@@ -1,6 +1,5 @@
-import React from 'react';
-import CatActivities from './components/CatActivities';
 import './App.css';
+import Activity from './components/Activity';
 
 import { Provider } from 'react-redux';
 import { store } from './store';
@@ -9,9 +8,10 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <CatActivities />
+        <Activity />
       </div>
     </Provider>
+    
   );
 }
 
